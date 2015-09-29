@@ -29,6 +29,8 @@
         <h1 class="title">Clima Agora</h1>
       </ion-header-bar>
       <ion-content>
+          <ion-refresh pulling-text="Recarregar Clima" on-refresh="reloadClima()"></ion-refresh>
+          
           <ion-list>
             <ion-item>
                 <h1>Cidade: {{cidade}}</h1>

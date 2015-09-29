@@ -51,6 +51,13 @@ function climaCtrl($scope,$ionicLoading,climaSvc){
     }
               
               );// fim do climaApp.temperatura
+    $scope.reloadClima = function(){
+    climaSvc.loadClima();
+        console.log("Passei reload");
+    $scope.$broadcast("scroll.infiniteScrollComplete");
+    $scope.$broadcast("scroll.refreshComplete");    
+        
+    }
     
     
 }// fim do contrroler
